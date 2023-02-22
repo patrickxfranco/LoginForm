@@ -65,6 +65,10 @@
     gap: 5px;
 }
 
+.card .rememberForgot .A > input[type="checkbox"] {
+    background-color: #151515;
+}
+
 .card .rememberForgot,
 .card .rememberForgot a {
     color: rgb(137, 131, 196);
