@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    align-items: center;
+}
+
+.card .loginTitle {
+    color: rgb(67, 65, 77);
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.card input[type="text"],
+.card input[type="password"] {
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+    background: rgb(230, 230, 230);
+    outline: 0;
+}
+
+.card .errorMessage {   /* MENSAGEM DE ERRO CASO O USUÁRIO NÃO INSIRA OS VALORES NOS TEXTBOX */
+    /*border: 1px solid red;*/ /*---------- BORDA DE TESTE */
+    width: 100%;
+    color: rgba(255, 0, 0, 0.795);
+    display: none;
+}
+
+.card .rememberForgot {
+    margin: 5px 0 0;
+    width: 100%;
+    height: 25px;
+    /*border: 1px solid red;*/ /*---------- BORDA DE TESTE */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+}
+
+.card .rememberForgot .A {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card .rememberForgot,
+.card .rememberForgot a {
+    color: rgb(137, 131, 196);
+}
+
+.card button {
+    margin: 30px;
+    background: rgb(126, 131, 250);
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    cursor: pointer;
+    transition: outline 0.2s;
+}
+
+.card button:hover {
+    outline:  5px solid rgb(126, 131, 250, 0.2);
+}
